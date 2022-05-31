@@ -1,0 +1,14 @@
+ (1)  //small and higth number
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 101;
+            if (a >= 109)
+
+                System.Console.WriteLine("hights");
+            else
+                System.Console.WriteLine("Small");
+        }
+    }
+}
