@@ -1,0 +1,15 @@
+namespace array3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = { 10, 20, 30, 40,70 };
+            foreach (int num in arr)
+            {
+                Console.WriteLine(num);
+            }
+            
+        }
+    }
+}
