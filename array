@@ -1,0 +1,16 @@
+namespace Array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = { 10, 20, 30, 40, 50 };
+            int i = 0;
+            while (i < arr.Length)
+            {
+                Console.WriteLine(arr[i]);
+                i++;
+            }
+        }
+    }
+}
