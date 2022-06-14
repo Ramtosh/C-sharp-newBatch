@@ -1,0 +1,21 @@
+  class Hello
+    {
+        String Name;
+        int emp_id;
+        int Salary;
+        Hello(String Name, int emp_id,int Salary)
+        {
+            this.Name = Name;
+            this.emp_id = emp_id;
+            this.Salary = Salary;
+
+
+        }
+        static void Main(string[] args)
+        {
+            Hello obj1 = new Hello("ram", 10, 250000);
+            Hello obj2 = new Hello("amit", 20, 25000);
+            Console.WriteLine("Employee1" + obj1.Name + +obj1.emp_id + obj1.Salary);
+            Console.WriteLine("Employee2" + obj2.Name + +obj2.emp_id + obj2.Salary);
+        }
+    }
