@@ -1,0 +1,50 @@
+using System;
+
+namespace ConsoleApp17
+{
+    public class car
+    {
+      
+        public String Model;
+        public String Coler;
+        public int Price;
+        public void information()
+        {
+            Console.WriteLine("Model:" + Model);
+            Console.WriteLine("Coler:" + Coler);
+            Console.WriteLine("Price:" + Price);
+        }
+    }
+    public class Maruti : car
+    {
+        public float mileage;
+        
+        public void Mileage()
+        {
+            Console.WriteLine("Mileage:" + mileage);
+        }
+       
+    }
+
+    class firstProgram
+    { 
+     static void Main(string[] args)
+        { 
+    
+        Maruti mycar = new Maruti();
+        mycar.Model = "alto";
+        mycar.Coler = "white";
+        mycar.Price = 200000;
+
+         mycar.mileage = 33.5f;
+           
+         mycar.Mileage();
+            mycar.information();
+       
+        Console.ReadLine();
+
+
+     }
+    }
+    
+}
