@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp24
+{
+    public class Demo
+    {
+        private String name;
+        public String Name
+        {
+            get
+            {
+                return name;
+
+            }
+            set
+            {
+                name = value;
+            }
+         }
+
+        static void Main(string[] args)
+        {
+            Demo e1= new Demo();
+            e1.Name = "Ram";
+            Console.WriteLine("Name is:" + e1.name);
+        }
+    }
+}
