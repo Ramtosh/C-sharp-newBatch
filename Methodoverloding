@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp21
+{
+    class Demo
+    {
+        static int plusMethodInt(int x, int y)
+        {
+            return x + y;
+        }
+        static Double plusMethodDouble(Double x, Double y)
+        {
+            return x + y;
+        }
+        class program
+        {
+            static void Main(string[] args)
+            {
+                int myNum1 = plusMethodInt(6, 8);
+                Double myNum2 = plusMethodDouble(2.4, 5.23);
+                Console.WriteLine("int:" + myNum1);
+                Console.WriteLine("Double:" + myNum2);
+            }
+        }
+
+    }
+}
