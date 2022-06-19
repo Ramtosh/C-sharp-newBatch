@@ -1,0 +1,39 @@
+using System;
+
+namespace ConsoleApp20
+{
+    class Animal
+    {
+        public void Animalsound()
+        { 
+            Console.WriteLine("The Animal makes sound");
+        }
+    }
+    class Cat:Animal
+    {
+        public void Animalsound()
+        {
+            Console.WriteLine("The cat says: Mau");
+        }
+    }
+    class Dog : Animal
+    {
+        public void Animalsound()
+        {
+            Console.WriteLine("The Dog says: Bho Bho");
+
+        }
+    }
+    class program {
+        static void Main(string[] args)
+        {
+            Animal obj1 = new Animal();
+            Cat obj2 = new Cat();
+            Dog obj3 = new Dog();
+            obj1.Animalsound();
+            obj2.Animalsound();
+            obj3.Animalsound();
+
+        }
+    }
+}
