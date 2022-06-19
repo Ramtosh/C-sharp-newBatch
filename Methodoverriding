@@ -1,0 +1,41 @@
+using System;
+
+namespace ConsoleApp23
+{
+    class Animal
+    {
+        public virtual void AnimalSound()
+        {
+            Console.WriteLine("The Animal makes: sound");
+        }
+        class Cat : Animal
+        {
+            public override void AnimalSound()
+            {
+                Console.WriteLine("THe Cat says: mau mau");
+
+            }
+
+        }
+        class Dog : Animal
+        {
+            public override void AnimalSound()
+            {
+                Console.WriteLine("The Dog says: Bho Bho");
+            }
+
+        }
+        class program
+        {
+
+            static void Main(string[] args)
+            {
+                Animal obj1 = new Animal();
+                Cat obj2 = new Cat();
+                Dog obj3 = new Dog();
+                obj1.AnimalSound();
+                obj2.AnimalSound();
+                obj3.AnimalSound();
+            }
+        }
+    }
