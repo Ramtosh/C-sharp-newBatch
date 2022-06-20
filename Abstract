@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApp27
+{
+    public abstract class Demo
+    {
+        public abstract void test();
+        class amit : Demo
+        {
+            public override void test()
+            {
+                Console.WriteLine("Hi amit");
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            amit obj = new amit();
+            obj.test();
+        }
+    }
