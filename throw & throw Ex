@@ -1,0 +1,73 @@
+using System;
+
+namespace ConsoleApp28
+{
+    class class1
+    {
+        static void Main()
+        {
+            try {
+                test();
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine("Error due to:" + Ex.StackTrace);
+                Console.ReadLine();
+            }
+        }
+        static void test()
+        {
+            try
+            {
+                test2();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        static void test2()
+        {
+            try
+            {
+                test3();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        static void test3()
+        {
+            try
+            {
+                test4();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        static void test4()
+        {
+            try
+            {
+                Console.Write("Enter first number:");
+                int a = int.Parse(Console.ReadLine());
+                Console.Write("Enter second number:");
+                int b = int.Parse(Console.ReadLine());
+                int c = a + b;
+                Console.Write("value of c :" + c);
+            }
+                catch (Exception) {
+
+                throw;
+
+            }
+        }
+      
+    }
+ }
+ 
+
+
