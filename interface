@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApp29
+{
+   public interface Ianimal
+   {
+        
+       void animalsound();
+   }
+       class cat: Ianimal
+       {
+         public void animalsound()
+         {
+            Console.WriteLine("cat says: mau mau");
+         }
+       }
+    class program
+    {
+       public static void Main(string[] args)
+       {
+            cat mycat = new cat();
+            mycat.animalsound();
+
+       }
+    }
+}
