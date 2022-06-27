@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApp37
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1 = 0, n2 = 1, n3, i, no;
+            Console.WriteLine("Enter any number:");
+            no = int.Parse(Console.ReadLine());
+            Console.Write(n1 + "" + n2 + "");
+            for(i = 2; i < no; i++)
+            {
+                n3 = n1 + n2;
+                Console.Write(n3 + "");
+                n1 = n2;
+                n2 = n3;
+            }
+        }
+    }
+}
