@@ -1,21 +1,23 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ConsoleApp33
+namespace ConsoleApp46
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string str, revstring = " ";
-            Console.WriteLine("Enter String:");
-            str = Console.ReadLine();
-            str = str.ToLower ();
-            for (int i = str.Length-1; i>0; i--)
+            String rev = "";
+           Console.WriteLine("Enter String:");
+            String a =Console.ReadLine();
+            for(int i =a.Length -1; i >= 0; i--)
             {
-                revstring = revstring + str[i];
-
+                rev += a[i];
             }
-            Console.WriteLine("Reverse String:{0}", revstring);
+            Console.WriteLine(rev);
             Console.ReadLine();
         }
     }
