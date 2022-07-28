@@ -1,0 +1,32 @@
+using System;
+namespace ConsoleApp50
+{
+    internal class Lights
+    {
+        internal bool model;
+        internal string companyName;
+        internal int power;
+        public string Location { get; internal set; }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Lights L = new Lights() {model= true, companyName = "xyz", Location = "NCR", power = 33 };
+            Lights L1= new Lights() {model = true, companyName = "Cht", Location = "Noida" , power = 33 };
+            Lights L2 = new Lights() {model= false, companyName = "abd", Location = "Delhi", power = 33 };
+            Lights L3 = new Lights() {model= false, companyName = "jpu", Location = "Ghaziabad", power = 33 };
+            Lights[] ar;
+            ar = new Lights[] { L, L1, L2, L3 };
+            Console.WriteLine("Locations Light off:");
+            foreach (var item in ar)
+            {
+                if(item.model == false)
+                {
+                    Console.WriteLine("Location:{0}  CompanyName:{1}  Watt:{2}", item.Location, item.companyName, item.power);
+                }
+            }
+            Console.WriteLine();
+        }
+    }
+}
