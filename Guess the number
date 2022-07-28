@@ -1,33 +1,32 @@
 using System;
-class Program
-{
-    static void Main()
-    {
-        Random rd = new Random();
-        int rand_num = rd.Next(1, 100);
-        Console.WriteLine(rand_num);
-        int number = 0;
-        while(number<10)
-        {
-            Console.WriteLine("Enter your guess number");
-            int guess_number = int.Parse(Console.ReadLine());
-            if(guess_number == rand_num)
-            {
-                Console.WriteLine("You Won");
-                break;
-            }
-            if(number==9)
-            {
-                Console.WriteLine("You Lose");
-            }
-            else
-            {
-                Console.WriteLine("");
-            }
-            number++;
-            
-        }
 
-        
+namespace ConsoleApp49
+{
+    class Demo
+    {
+        static void Main(string[] args)
+        {
+            int a = 0;
+            Random rd = new Random();
+            for (int i = 0; i< 10; i++)
+            {
+                Console.WriteLine("Enter the guess no 1 to 100:");
+                int b = Convert.ToInt32(Console.ReadLine());
+                int c = rd.Next(1, 100);
+                Console.WriteLine(c);
+                if (c == b)
+                {
+                    Console.WriteLine("You won");
+                    a++;
+                }
+                else
+                {
+                    Console.WriteLine("You Lose");
+                }
+            }
+            Console.WriteLine("Score is {0} out of 10", a);
+            Console.ReadLine();
+        }
     }
 }
+
